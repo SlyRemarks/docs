@@ -101,9 +101,9 @@ emonTx V2 & V3 emonTx4.
 
 Fig 3a: 
 
-<code>I<sub>CT1</sub> = I<sub>1</sub>  + I<sub>3</sub></code>
-<code>I<sub>CT2</sub> = I<sub>2</sub>  + I<sub>3</sub></code>
-<code>Total Power = ½ × V × I<sub>CT1</sub> + ½ × V × I<sub>CT2</sub></code>
+<code>I<sub>CT1</sub> = I<sub>1</sub>  + I<sub>3</sub></code> <br>
+<code>I<sub>CT2</sub> = I<sub>2</sub>  + I<sub>3</sub></code> <br>
+<code>Total Power = ½ × V × I<sub>CT1</sub> + ½ × V × I<sub>CT2</sub></code> <br>
 
 Fig 3b: 
 
