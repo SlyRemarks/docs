@@ -99,13 +99,15 @@ Figure 3a-b. North American Domestic Electricity Supply - Alternative arrangemen
 whole-house power. Note the different c.t. orientation for the emonTx V2 & V3 compared to the
 emonTx V2 & V3 emonTx4.
 
-Fig 3a: ICT1 = I 1  + I 3
+Fig 3a: 
 
-```
-ICT2 = I 2  + I 3
-Total Power = ½ × V × ICT1 + ½ × V × ICT
-```
-Fig 3b: ICT1 = I 1  + I 3
+<code>I<sub>CT1</sub> = I<sub>1</sub>  + I<sub>3</sub></code>
+<code>I<sub>CT2</sub> = I<sub>2</sub>  + I<sub>3</sub></code>
+<code>Total Power = ½ × V × I<sub>CT1</sub> + ½ × V × I<sub>CT2</sub></code>
+
+Fig 3b: 
+
+ICT1 = I 1  + I 3
 
 ```
 ICT2 = I 2  - I 1
