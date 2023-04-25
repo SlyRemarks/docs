@@ -12,7 +12,7 @@ The normal rating of the domestic supply will be 80 or 100 A. The supply author
 
 Compared to the UK, the North American final distribution transformer tends to be quite small, typically 25 kVA, serving only a few homes. The normal domestic supply is 240 V, 60 Hz centre-tapped, and the centre tap is the neutral, which is also grounded.
 
-![N.American Electricity Supply - final transformer voltages](files/N_America_Fig_1.svg)
+![N.American Electricity Supply - final transformer voltages](files/EINA210423/N_America_Fig_1.webp)
 
 <p style="font-size: smaller">Figure 1. North American Domestic Electricity Supply - final transformer voltages.</p>
 
@@ -20,11 +20,11 @@ The voltage tolerance is ±5% and the imbalance between the two legs has been re
 
 The frequency tolerance is ±0.02 Hz. The effect of the higher frequency will, for most purposes, be marginal. Transformers, both current and voltage, will have slightly different losses and phase errors, and the delay between measuring voltage and current will also be different (in terms of angle), all of which will imply slightly different values for phase calibration. Inside the emonTx, capacitors on the a.c. side will have a lower impedance. On the firmware side, the sketches will sample at the same rate, but there will be fewer samples per cycle. In theory, this will mean the highest harmonic number that can be measured is lower, but in practice, the energy that will be missed will be insignificant. The major exceptions are the monitoring sketches that employ the phase locked loop (PLL) principle. These require adjustment to the timing in order to lock to the higher frequency. (That adjustment might be by changing a value in the sketch, or there might be a separate version for each frequency.)
 
-## Measuring Whole-house Power
+## Measuring Whole-House Power
 
 Because there are three wires (discounting the protective ground conductor), classical theory dictates that two wattmeters are needed, and for ‘wattmeter’ read a pair of voltage and current measurements. Unfortunately, the emonTx has only one voltage input, therefore a compromise is required. Fortunately, because the voltage balance between the two legs is good, little error is introduced by assuming the voltages are equal in magnitude. However, two current measurements are always necessary. Again, in theory it does not matter which voltages and currents are measured, but in general, it will be more convenient to arrange the voltage transformer to measure the voltage of one leg to neutral, and to attach a current transformer to each leg.
 
-![N.American Electricity Supply - Measuring whole-house power](files/N_America_Fig_2.svg)
+![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_2.webp)
 
 <p style="font-size: smaller">Figure 2. North American Domestic Electricity Supply - Measuring whole-house power.</p>
 
@@ -42,7 +42,7 @@ which is correct.
 
 Other arrangements are possible:
 
-![N.American Electricity Supply - Measuring whole-house power](files/N_America_Fig_3a.svg) ![N.American Electricity Supply - Measuring whole-house power](files/N_America_Fig_3b.svg)
+![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3b.webp)
 <p style="font-size: smaller">Figure 3a-b. North American Domestic Electricity Supply - Alternative arrangements for measuring whole-house power.</p>
 
 Fig 3a: I<sub>CT1</sub> = I<sub>1</sub> + I<sub>3</sub>
@@ -61,8 +61,8 @@ Total Power = 2 × V × I<sub>CT1</sub> + V × I<sub>CT2</sub>
 
 Individual circuits may be either 120 V using a connection between one leg and neutral, or they may be 240 V, i.e. connected to both legs.
 
-![N.American Electricity Supply - Measuring individual circuits](files/N_America_Fig_4a_0.svg) ![N.American Electricity Supply - Measuring whole-house power](files/N_America_Fig_4b_0.svg)
-![N.American Electricity Supply - Measuring whole-house power](files/N_America_Fig_4c_0.svg)
+![N.American Electricity Supply - Measuring individual circuits](files/EINA210423/N_America_Fig_4a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_4b.webp)
+![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_4c.webp)
 <p style="font-size: smaller">Figure 4a-c. North American Domestic Electricity Supply - Alternative arrangements for measuring individual circuits.</p>
 
 Fig 4a: Power = V × I = EnergyMonitor::realPower
