@@ -267,10 +267,13 @@ Note: For the emonTx V3.4 the following changes are required:
 
 Spare digital outputs for SYNCPIN & SAMPPIN are not available. DIO7 is available on a pad and _might_ be usable for either, with care. These outputs are intended for development & testing only, and are not required in normal operation.
 
+No information is available regarding changes required for the emonTx4.
+
 ### Changes for Robin Emley’s Energy Diverter
 
-(See [Diverting surplus PV Power, by Robin Emley](../../pv-diversion/mk2/index))
-The only change necessary is to alter CYCLES_PER_SECOND to 60.
+(See [Diverting surplus PV Power, by Robin Emley](/pv-diversion/mk2/index.html)) The only change necessary for the emonTx V2
+or emonTx V3.x is to alter CYCLES_PER_SECOND to 60. No information is available regarding
+changes required for the emonTx4.
 
 ### Glossary / Translation
 
