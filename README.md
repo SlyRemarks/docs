@@ -85,7 +85,7 @@ Note that CT 1 faces to the right and CT 2 faces to the left, as indicated by th
 If we assume the lower leg voltage is identical in magnitude to the upper, and we add the powers
 together in software, then the total power as measured will be
 
-<code>V × I<sub>CT1</sub> + V × I<sub>CT2</sub><br></code>
+<code>V × I<sub>CT1</sub> + V × I<sub>CT2</sub></code><br>
 <code>= V × (I<sub>1</sub> + I<sub>3</sub> ) + V × (I<sub>2</sub> + I<sub>3</sub> )</code><br>
 <code>= V × I<sub>1</sub> + V × I<sub>2</sub> + 2 × V × I<sub>3</sub></code>
 
@@ -105,78 +105,17 @@ Fig 3a:
 
 Fig 3b: 
 
-ICT1 = I 1  + I 3
+<code>I<sub>CT1</sub> = I<sub>1</sub> + I<sub>3</code> <br>
+<code>I<sub>CT2</sub> = I<sub>2</sub> - I<sub>1</code> <br>
+<code>Total Power = 2 × V × I<sub>CT1</sub> + V × ICT</code> <br>
 
-```
-ICT2 = I 2  - I 1
-Total Power = 2 × V × ICT1 + V × ICT
-```
-## Measuring Individual Circuits
+### Measuring Individual Circuits
 
 Individual circuits may be either 120 V using a connection between one leg and neutral, or they
 may be 240 V, i.e. connected to both legs.
 
-### 120 V
-
-```
-load
-```
-### 120 V
-
-```
-load
-```
-```
-VT
-```
-### CT 1
-
-### CT 2
-
-### I 1
-
-### I 2
-
-### I 3
-
-## (a)
-
-
-### 120 V
-
-```
-load
-```
-```
-VT
-```
-### CT
-
-## (a)
-
-### 120 V
-
-```
-load
-```
-```
-VT
-```
-### CT
-
-## (b)
-
-### 240 V
-
-```
-load
-```
-```
-VT
-```
-### CT
-
-## (c)
+![](/files/EINA210423/N_America_Fig_4a.webp) ![](/files/EINA210423/N_America_Fig_4b.webp)
+![](/files/EINA210423/N_America_Fig_4c.webp)
 
 Figure 4a-c. North American Domestic Electricity Supply - Alternative arrangements for measuring
 individual circuits.
@@ -202,35 +141,15 @@ arrangement of Fig 4c can be used. There will however, be a small error.
 If the 120 V load cannot be ignored, i.e. the error is unacceptable, the load should be treated as a
 “whole house” with one of the arrangements of Fig 3 shown in the section above.
 
-## Connecting the Current Transformers
+### Connecting the Current Transformers
 
 The obvious way to connect the current transformers is to have each connected directly to an input.
 This arrangement is necessary if, for example, it is desirable or necessary to be able to balance the
 currents in each leg of the supply. But if only the total power is required, then a single input can be
 used, releasing the second for another circuit.
 
-
-```
-CURRENT
-INPUT
-```
-```
-CURRENT
-INPUT
-```
-## (a)
-
-```
-CURRENT
-INPUT
-```
-## (b)
-
-```
-CURRENT
-INPUT
-```
-## (c)
+![](/files/EINA210423/N_America_Fig_5a.webp) ![](/files/EINA210423/N_America_Fig_5b.webp)
+![](/files/EINA210423/N_America_Fig_5c.webp)
 
 Figure 5a-c. North American Domestic Electricity Supply - Connecting the Current Transformers.
 
