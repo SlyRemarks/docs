@@ -102,7 +102,7 @@ I<sub>CT2</sub> = I<sub>2</sub> - I<sub>1</sub>
 
 Total Power = 2 × V × I<sub>CT1</sub> + V × I<sub>CT2</sub>
 
-## Measuring Individual Circuits
+### Measuring Individual Circuits
 
 Individual circuits may be either 120 V using a connection between one leg and neutral, or they may be 240 V, i.e. connected to both legs.
 
@@ -133,7 +133,7 @@ arrangement of Fig 4c can be used. There will however, be a small error.
 If the 120 V load cannot be ignored, i.e. the error is unacceptable, the load should be treated as a
 “whole house” with one of the arrangements of Fig 3 shown in the section above.
 
-## Connecting the Current Transformers
+### Connecting the Current Transformers
 
 The obvious way to connect the current transformers is to have each connected directly to an input.
 This arrangement is necessary if, for example, it is desirable or necessary to be able to balance the
@@ -183,13 +183,13 @@ must be chosen so that they develop the same voltage for the same primary curren
 This arrangement is suitable for ‘voltage output’ CTs, but the output voltage at rated current should
 be approximately 0.55 V (0.75 V for the emonTx Shield).
 
-## Suitable Current Transformers
+### Suitable Current Transformers
 
 *Note: The manufacturer adjusts the turns ratio to give the correct output current.*
 
 The burden & calibration coefficient are calculated for Fig 5a arrangement only.
 
-## Magnelab solid core series
+#### Magnelab Solid-Core Series
 
 | Imax  | Catalog Part No. | Nominal Ratio | Aperture | Burden (E24 series, 0.25 W, 1%) | Calibration coefficient |
 |-------|------------------|---------------|----------|---------------------------------|-------------------------|
@@ -199,7 +199,7 @@ The burden & calibration coefficient are calculated for Fig 5a arrangement only.
 | 200 A | UCT-1000-000     | 1:1000        | 1.0”     | 5.6 Ω                           | 178.57                  |
 | 400 A | UCT-1250-000     | 1:1200        | 1.25”    | 3.3 Ω, 0.5 W                    | 363.64                  |
 
-## Magnelab split core series
+#### Magnelab Split-Core Series
 
 | Imax   | Catalog Part No. | Nominal Ratio | Aperture | Burden (E24 series, 0.25 W, 1%) | Calibration coefficient |
 |--------|------------------|---------------|----------|---------------------------------|-------------------------|
@@ -213,7 +213,7 @@ Magnelab offers a 1, 2 & 5 Volt output option on both the UCT and the SCT range
 
 For consistency with the standard YHDC CT supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
-## Wattcore split core series
+#### Wattcore Split-Core Series
 
 | Imax   | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration coefficient |
 |--------|------------------|---------------|---------------|-------------------|-------------------------|
@@ -226,7 +226,7 @@ For consistency with the standard YHDC CT supplied by the shop, connect the whit
 
 For consistency with the standard YHDC CT supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
-## Continental Control Systems - ACT-0750 Series Split-Core Current Transformers
+#### Continental Control Systems - ACT-0750 Series Split-Core Current Transformers
 
 | Imax  | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration coefficient |
 |-------|------------------|---------------|---------------|-------------------|-------------------------|
@@ -243,7 +243,7 @@ Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified fo
 
 For consistency with the standard YHDC CT supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
-## YHDC 100A/200A/400A Split Core Current Transformer SCT023R
+#### YHDC 100A/200A/400A Split Core Current Transformer SCT023R
 
 ![yhdc_sct023r.png](files/yhdc_sct023r.png)
 ![yhdc_sct023r_drawing.png](files/yhdc_sct023r_drawing.png)
@@ -297,7 +297,7 @@ measurements. The emonTx4 has three voltage inputs, only L1 and L2 should be use
 need two current measurements, one on each ‘hot’ leg of the supply. You do not need a c.t. on the
 neutral, it will only tell you the current imbalance between the two legs.
 
-![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_6.webp)
+![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_6-CTs.webp)
 
 Figure 6. North American Domestic Electricity Supply - Measuring whole-house power. Note the
 different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.
