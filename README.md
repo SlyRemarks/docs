@@ -245,8 +245,8 @@ For consistency with the standard YHDC CT supplied by the shop, connect the whit
 
 #### YHDC 100A/200A/400A Split Core Current Transformer SCT023R
 
-![yhdc_sct023r.png](files/yhdc_sct023r.png)
-![yhdc_sct023r_drawing.png](files/yhdc_sct023r_drawing.png)
+![yhdc_sct023r.png](files/EINA210423/yhdc_sct023r.png)
+![yhdc_sct023r_drawing.png](files/EINA210423/yhdc_sct023r_drawing.png)
 
 | Rated Current (IPN) | Maximum Input (IPM) | Rated Output | Maximum Burden | Calibration Coefficient¹ |
 |---------------------|---------------------|--------------|----------------|--------------------------|
@@ -459,6 +459,10 @@ For consistency with the standard CTs supplied by the shop, connect the white wi
 and the black wire to the sleeve. There should be no connection to the ring.
 
 #### YHDC 50A/100A/200A/300A/400A Split-Core Current Transformer SCT023R Output Voltage
+
+![SCT023R_0.333V_Pic.png](files/EINA210423/SCT023R_0.333V_Pic.png)
+![SCT023R_0.333V_Sch.png](files/EINA210423/SCT023R_0.333V_Sch.png)
+![SCT023R_0.333V_Dims.png](files/EINA210423/SCT023R_0.333V_Dims.png)
 
 type
 Rated Current
