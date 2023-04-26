@@ -297,6 +297,8 @@ measurements. The emonTx4 has three voltage inputs, only L1 and L2 should be use
 need two current measurements, one on each ‘hot’ leg of the supply. You do not need a c.t. on the
 neutral, it will only tell you the current imbalance between the two legs.
 
+![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_6.webp)
+
 Figure 6. North American Domestic Electricity Supply - Measuring whole-house power. Note the
 different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.
 
@@ -338,6 +340,8 @@ and add the resulting powers to give the total.
 
 Individual circuits may be either 120 V using a connection between one leg and neutral, or they
 may be 240 V, i.e. connected to both legs.
+
+![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7b.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7c.webp)
 
 Figure 7a-c. North American Domestic Electricity Supply - Arrangements for measuring individual
 circuits. Note the different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.
