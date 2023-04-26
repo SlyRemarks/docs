@@ -289,10 +289,6 @@ where both are numbers greater than 1\. For the emonTx V3.4, the voltage divide
 
 ## Part 2: Using an emonTx4 and emonVs
 
-#########################################################################################
-#########################################################################################
-#########################################################################################
-
 ### Measuring Whole-House Power
 
 Because there are three wires (discounting the protective ground conductor), classical theory
@@ -300,28 +296,41 @@ dictates that two wattmeters are needed, and for ‘wattmeter’ read a pair of 
 measurements. The emonTx4 has three voltage inputs, only L1 and L2 should be used. You will
 need two current measurements, one on each ‘hot’ leg of the supply. You do not need a c.t. on the
 neutral, it will only tell you the current imbalance between the two legs.
+
 Figure 6. North American Domestic Electricity Supply - Measuring whole-house power. Note the
 different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.
+
 In Fig 6, assume for simplicity the loads are all purely resistive. (If they are not, which will almost
 certainly be the case in practice, the same principle applies but the maths is a little more
 complicated.)
-CT 1 sees the total current of the upper 120 V load and the 240 V load: I1 + I3
-CT 2 sees the total current of the lower 120 V load and the 240 V load: I2 + I3
+
+CT 1 sees the total current of the upper 120 V load and the 240 V load: I<sub>1</sub> + I<sub>3</sub>
+
+CT 2 sees the total current of the lower 120 V load and the 240 V load: I<sub>2</sub> + I<sub>3</sub>
+
 Note that both CT 1 and CT 2 face to the left, as indicated by the ‘phase dots’ – this is because both
 V1 and V2 voltages are measured with reference to the neutral.
+
 The power for loads only on the “A” leg is straightforward:
-P = V1 × I1
+
+<code>P = V<sub>1</sub> × I<sub>1</sub></code>
+
 and for the “B” leg (a mirror image):
-P = V2 × I2
+
+<code>P = V<sub>2</sub> × I<sub>2</sub></code>
+
 but for 240 V loads, the two voltages are measured in opposite directions and the currents too flow
 in opposite directions through the CTs. The simplest way to think of this is to divide the 240 V load
 into two – the mid-point can then (conceptually) be connected to the neutral (but no current will
 flow because it’s at the same voltage) and the two halves then become indistinguishable from two
 identical 120 V loads, each taking the same current as the 240 V load did.
+
 The total power is
-P = V1 × ICT1 + V2 × ICT2
- = V1 × I1 + V2 × I2 + V1 × I3 + ( -V2 × -I3 )
- = V1 × I1 + V2 × I2 + (V1 + V2) × I3
+
+<code>P = V<sub>1</sub> × I<sub>CT1</sub> + V<sub>2</sub> × I<sub>CT2</sub></code> <br>
+<code> = V<sub>1</sub> × I<sub>1</sub> + V<sub>2</sub> × I<sub>2</sub> + V<sub>1</sub> × I<sub>3</sub> + ( -V<sub>2</sub> × -I<sub>3</sub> )</code> <br>
+<code> = V<sub>1</sub> × I<sub>1</sub> + V<sub>2</sub> × I<sub>2</sub> + (V<sub>1</sub> + V<sub>2</sub>) × I<sub>3</sub> </code>
+ 
 You should set up two power channels, one using CT1 and V1 and the second using CT2 and V2,
 and add the resulting powers to give the total.
 
@@ -329,15 +338,20 @@ and add the resulting powers to give the total.
 
 Individual circuits may be either 120 V using a connection between one leg and neutral, or they
 may be 240 V, i.e. connected to both legs.
+
 Figure 7a-c. North American Domestic Electricity Supply - Arrangements for measuring individual
 circuits. Note the different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.
-In each case, the power calculation is set up by the API call EmonLibDB_set_pInput(…)
+
+In each case, the power calculation is set up by the API call <code>EmonLibDB_set_pInput(…)</code>.
+
 For the Fig 7a & b arrangements, use the “single voltage” form and for Fig 7c use the “2 voltages”
 form, which takes care of adding the voltages together.
+
 If the circuit is “mixed” 120 V and 240 V, i.e. the main load is 240 V but there is a neutral
 connection to supply for example a timer, an indicator lamp or similar low power device, then it
 might be acceptable to ignore the 120 V load and treat the load as a “pure” 240 V load and the
 arrangement of Fig 4c can be used. There will however, be a small error.
+
 If the 120 V load cannot be ignored, i.e. the error is unacceptable, the load should be treated as a
 “whole house” following the arrangement of Fig 6 above with 2 c.t’s, but the c.t’s must be on the
 conductors supplying the load before the 120 V circuit splits off.
@@ -346,13 +360,17 @@ conductors supplying the load before the 120 V circuit splits off.
 
 Current transformers with a voltage output of 0.333 V rms at the rated current should be used with
 the emonTx4. The calibration coefficient is always the rated current of the c.t.
+
 It is not necessary to short-circuit a voltage-output c.t. while it is not connected to the emonTx
 (because its burden is internal).
+
 If it is absolutely necessary to use a current-output c.t, then you must provide a burden of resistance
 value to give a voltage as close as possible to but less than 0.333 V rms at the rated primary
 current of the c.t, with a power rating to suit. The calibration coefficient is the current that would
 give 0.333 V at the emonTx4 current input.
-Magnelab solid core series
+
+#### Magnelab Solid-Core Series
+
 Imax Catalog Part No. Aperture Calibration coefficient
 10 A UCT-0500-010 0.5” 10
 15 A UCT-0500-015 0.5” 15
@@ -365,7 +383,9 @@ Imax Catalog Part No. Aperture Calibration coefficient
 100 A UCT-0750-100 0.75” 100
 150 A UCT-1000-150 1.00” 150
 200 A UCT-1000-200 1.00” 200
-Magnelab split core series
+
+#### Magnelab Split-Core Series
+
 Imax Catalog Part No. Aperture Calibration coefficient
 1 A SCT-0400-001 0.4” 1
 5 A SCT-0400-005 0.4” 5
@@ -384,12 +404,16 @@ Imax Catalog Part No. Aperture Calibration coefficient
 400 A SCT-1250-400 1.25” 400
 600 A SCT-2000-600 2” × 2” 600
 800 A SCT-3000-800 3” × 5” 800
+
 This is an abridged list. Magnelab offers many more current and size options in both the UCT solid
 core and the SCT split-core ranges CTs, which are available through their distributor, Aim
 Dynamics.
+
 For consistency with the standard CTs supplied by the shop, connect the white wire to the plug tip
 and the black wire to the sleeve. There should be no connection to the ring.
-Wattcore split core series
+
+#### Wattcore Split-Core Series
+
 Imax Catalog Part No. Aperture Calibration coefficient
 10 A WC0-10-MV333 0.45” × 0.47” 10
 20 A WC0-20-MV333 0.45” × 0.47” 20
@@ -403,10 +427,14 @@ Imax Catalog Part No. Aperture Calibration coefficient
 300 A WC4-300-MV333 1.3” × 1.7” 300
 400 A WC4-400-MV333 1.3” × 1.7” 400
 1000 A WC5-1000-MV333 2.0” × 3.5” 1000
+
 This is an abridged list. Wattcore offers many more current and size options in both the WC splitcore and the WCS solid core ranges.
+
 For consistency with the standard CTs supplied by the shop, connect the white wire to the plug tip
 and the black wire to the sleeve. There should be no connection to the ring.
-Continental Control Systems - ACTL Series Split-Core Current Transformers
+
+#### Continental Control Systems - ACTL Series Split-Core Current Transformers
+
 Imax Catalog Part No. Aperture Calibration coefficient
 20 A ACTL-0750-020 0.78” × 0.78” 20
 50 A ACTL-0750-050 0.78” × 0.78” 50
@@ -416,13 +444,18 @@ Imax Catalog Part No. Aperture Calibration coefficient
 250 A ACTL-1250-250 1.83” × 1.26” 250
 400 A ACTL-1250-400 1.83” × 1.26” 400
 600 A ACTL-1250-600 1.83” × 1.26” 600
+
 Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified for use on a 50 Hz
 system. “Option C0.6” is the revenue-grade version.
-This is an abridged list, see the manufacturer’s website for details. CCS also makes solid-core CTs
+
+This is an abridged list, see the [manufacturer’s website](https://www.ccontrolsys.com/w/ACT_Series_Split-Core_Current_Transformers#Options) for details. CCS also makes solid-core CTs
 and CTs that are rated up to 6 kA primary current.
+
 For consistency with the standard CTs supplied by the shop, connect the white wire to the plug tip
 and the black wire to the sleeve. There should be no connection to the ring.
-YHDC 50A/100A/200A/300A/400A Split core current transformer SCT023R output voltage
+
+#### YHDC 50A/100A/200A/300A/400A Split-Core Current Transformer SCT023R Output Voltage
+
 type
 Rated Current
 (IPN)
@@ -434,22 +467,24 @@ Maximum Input
 300 A 300 A 0.333V 300
 400 A 400 A 0.333V 400
 600 A 600 A 0.333V 600
+
 For all variants:
 Accuracy: ± 1.0%
 Linearity: ± 1.0%
 Phase shift: Not specified
+
 A 3.5 mm ‘stereo’ jack plug is required. For consistency with the standard CTs supplied by the
 shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no
 connection to the ring.
+
 Note that the mounting screws must not be allowed to damage the insulation of the cable on which
 the transformer is mounted.
-See the manufacturer’s website for further details.
-This list is not exclusive, many other suitable current transformers are available.
-If you have any doubt as to the correct current transformer to specify, please enquire in the forums.
 
-###########
-############
-#############
+See the [manufacturer’s website](https://www.poweruc.pl/collections/split-core-current-transformers2/products/split-core-current-transformer-sct023r-rated-input-100a-400a) for further details.
+
+This list is not exclusive, many other suitable current transformers are available.
+
+If you have any doubt as to the correct current transformer to specify, please enquire in the [forums](https://community.openenergymonitor.org).
 
 ## Customer Generated Energy
 
