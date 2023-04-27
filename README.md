@@ -30,9 +30,9 @@ normally daisy-chained and supplied by a 6 A circuit breaker.
 Compared to the UK, the North American final distribution transformer tends to be quite small,
 typically 25 kVA, serving only a few homes. The normal domestic supply is 240 V, 60 Hz centre tapped, and the centre tap is the neutral, which is also grounded.
 
-![N.American Electricity Supply - final transformer voltages](files/EINA210423/N_America_Fig_1.webp)
+![N.American electricity supply - final transformer voltages](files/EINA210423/N_America_Fig_1.webp)
 
-<p style="font-size: smaller">Figure 1. North American Domestic Electricity Supply - final transformer voltages.</p>
+*Figure 1. North American domestic electricity supply - final transformer voltages.*
 
 The voltage tolerance is ±5% and the imbalance between the two legs has been reported to be better
 than 2 V, although there is no actual specification regarding voltage imbalance. Load centre (circuit
@@ -70,8 +70,8 @@ leg.
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_2.webp)
 
-Figure 2. North American Domestic Electricity Supply - Measuring whole-house power. Note the
-different c.t. orientation for the emonTx V2 & V3 compared to the emonTx V2 & V3 emonTx4.
+*Figure 2. North American domestic electricity supply - measuring whole-house power. Note the
+different c.t. orientation for the emonTx V2 & V3 compared to the emonTx V2 & V3 emonTx4.*
 
 In Fig 2, assume for simplicity the loads are all purely resistive. (If they are not, which will almost
 certainly be the case in practice, the same principle applies but the maths is a little more
@@ -90,7 +90,8 @@ Note that CT 1 faces to the right and CT 2 faces to the left, as indicated by 
 Other arrangements are possible:
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3b.webp)
-<p style="font-size: smaller">Figure 3a-b. North American Domestic Electricity Supply - Alternative arrangements for measuring whole-house power.</p>
+
+*Figure 3a-b. North American domestic electricity supply - alternative arrangements for measuring whole-house power.*
 
 Fig 3a: 
 
@@ -115,8 +116,8 @@ Individual circuits may be either 120 V using a connection between one leg and n
 ![N.American Electricity Supply - Measuring individual circuits](files/EINA210423/N_America_Fig_4a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_4b.webp)
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_4c.webp)
 
-Figure 4a-c. North American Domestic Electricity Supply - Alternative arrangements for measuring
-individual circuits.
+*Figure 4a-c. North American domestic electricity supply - alternative arrangements for measuring
+individual circuits.*
 
 Fig 4a: Power = V × I = EnergyMonitor::realPower
 
@@ -149,7 +150,7 @@ used, releasing the second for another circuit.
 ![N.American Electricity Supply - Measuring whole-house power, CT arrangement](files/EINA210423/N_America_Fig_5a.webp) ![N.American Electricity Supply - Measuring whole-house power, CT arrangement](files/EINA210423/N_America_Fig_5b.webp)
 ![N.American Electricity Supply - Measuring whole-house power, CT arrangement](files/EINA210423/N_America_Fig_5c.webp)
 
-Figure 5a-c. North American Domestic Electricity Supply - Connecting the Current Transformers.
+*Figure 5a-c. North American domestic electricity supply - connecting the current transformers.*
 
 Fig 5a – One input per CT – voltage type with internal burden or current type with burden in the
 emonTx.
@@ -268,7 +269,7 @@ For all variants:
     Linearity:  ± 0.5%
     Phase shift:  Not specified
     
-A 3.5 mm ‘stereo’ jack plug is required. For consistency with the standard YHDC CT supplied by
+A 3.5 mm ‘stereo’ jack plug is required. For consistency with the standard YHDC CT that was supplied by
 the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no
 connection to the ring.
 
@@ -305,8 +306,8 @@ neutral, it will only tell you the current imbalance between the two legs.
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_6-CTs.webp)
 
-Figure 6. North American Domestic Electricity Supply - Measuring whole-house power. Note the
-different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.
+*Figure 6. North American domestic electricity supply - measuring whole-house power. Note the
+different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.*
 
 In Fig 6, assume for simplicity the loads are all purely resistive. (If they are not, which will almost
 certainly be the case in practice, the same principle applies but the maths is a little more
@@ -349,8 +350,8 @@ may be 240 V, i.e. connected to both legs.
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7b.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7c.webp)
 
-Figure 7a-c. North American Domestic Electricity Supply - Arrangements for measuring individual
-circuits. Note the different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.
+*Figure 7a-c. North American domestic electricity supply - arrangements for measuring individual
+circuits. Note the different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.*
 
 In each case, the power calculation is set up by the API call <code>EmonLibDB_set_pInput(…)</code>.
 
