@@ -246,7 +246,7 @@ For consistency with the standard YHDC CT that was supplied by the shop, connect
 
 Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified for use on a 50 Hz system. “Option 1V” & “Option NL” must be specified for use with the emonTx or emonPi.
 
-“Revenue Grade” versions (having better accuracy) are also available, see the [manufacturer's website](https://www.ccontrolsys.com/w/ACT_Series_Split-Core_Current_Transformers#Options) for details. CCS also makes CTs that are rated up to 6 kA primary current.
+“Revenue Grade” versions (having better accuracy) are also available, see the [manufacturer's website](https://ctlsys.com/current-transformers/) for details. CCS also makes CTs that are rated up to 6 kA primary current.
 
 For consistency with the standard YHDC CT that was supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
