@@ -441,7 +441,7 @@ and the black wire to the sleeve. There should be no connection to the ring.
 | 400 A  | WC4-400-MV333  | 1.3” × 1.7”   | 400                     |
 | 1000 A | WC5-1000-MV333 | 2.0” × 3.5”   | 1000                    |
 
-This is an abridged list. Wattcore offers many more current and size options in both the WC splitcore and the WCS solid core ranges.
+This is an abridged list. Wattcore offers many more current and size options in both the WC split-core and the WCS solid-core ranges.
 
 For consistency with the standard CTs supplied by the shop, connect the white wire to the plug tip
 and the black wire to the sleeve. There should be no connection to the ring.
@@ -500,7 +500,7 @@ See the [manufacturer’s website](https://www.poweruc.pl/collections/split-core
 
 This list is not exclusive, many other suitable current transformers are available.
 
-If you have any doubt as to the correct current transformer to specify, please enquire in the [forums](https://community.openenergymonitor.org).
+If you have any doubt as to the correct current transformer to specify, [please enquire in the forums](https://community.openenergymonitor.org).
 
 ## Customer Generated Energy
 
