@@ -290,9 +290,9 @@ This adapter is only suitable for connecting Line–Neutral at 120 V (As in Fig
 
 The voltage calibration constant is
 
-voltage coefficient = (adapter voltage ratio at no load) × (voltage divider ratio)
+<code>voltage coefficient = (adapter voltage ratio at no load) × (voltage divider ratio)</code>
 
-where both are numbers greater than 1\. For the emonTx V3.4, the voltage divider ratio = 13; for the 77DA-10-09 adapter, its voltage ratio at no load is 10.0\. Taken together, these give a nominal voltage calibration coefficient = 130.0
+Where both are numbers greater than 1. For the emonTx V3.4, the voltage divider ratio = 13; for the 77DA-10-09 adapter, its voltage ratio at no load is 10.0. Taken together, these give a nominal voltage calibration coefficient = 130.0
 
 ## Part 2: Using an emonTx4 and emonVs
 
