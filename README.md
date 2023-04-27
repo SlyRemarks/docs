@@ -375,7 +375,7 @@ give 0.333 V at the emonTx4 current input.
 
 #### Magnelab Solid-Core Series
 
-| Imax  | Catalog Part No. | Aperture | Calibration coefficient |
+| Imax  | Catalog Part No. | Aperture | Calibration Coefficient |
 |-------|------------------|----------|-------------------------|
 | 10 A  | UCT-0500-010     | 0.5”     | 10                      |
 | 15 A  | UCT-0500-015     | 0.5”     | 15                      |
@@ -390,7 +390,7 @@ give 0.333 V at the emonTx4 current input.
 
 #### Magnelab Split-Core Series
 
-| Imax  | Catalog Part No. | Aperture | Calibration coefficient |
+| Imax  | Catalog Part No. | Aperture | Calibration Coefficient |
 |-------|------------------|----------|-------------------------|
 | 1 A   | SCT-0400-001     | 0.4”     | 1                       |
 | 5 A   | SCT-0400-005     | 0.4”     | 5                       |
@@ -419,19 +419,20 @@ and the black wire to the sleeve. There should be no connection to the ring.
 
 #### Wattcore Split-Core Series
 
-Imax Catalog Part No. Aperture Calibration coefficient
-10 A WC0-10-MV333 0.45” × 0.47” 10
-20 A WC0-20-MV333 0.45” × 0.47” 20
-30 A WC0-30-MV333 0.45” × 0.47” 30
-30 A WC1-30-MV333 0.72” x 0.62” 30
-60 A WC1-60-MV333 0.72” x 0.62” 60
-100 A WC1-100-MV333 0.72” x 0.62” 100
-200 A WC2-200-MV333 1.0” × 1.4” 200
-300 A WC2-300-MV333 1.0” × 1.4” 300
-200 A WC4-200-MV333 1.3” × 1.7” 200
-300 A WC4-300-MV333 1.3” × 1.7” 300
-400 A WC4-400-MV333 1.3” × 1.7” 400
-1000 A WC5-1000-MV333 2.0” × 3.5” 1000
+| Imax  | Catalog Part No. | Aperture     | Calibration Coefficient |
+|-------|------------------|--------------|-------------------------|
+| 10 A   | WC0-10-MV333   | 0.45” × 0.47” | 10                      |
+| 20 A   | WC0-20-MV333   | 0.45” × 0.47” | 20                      |
+| 30 A   | WC0-30-MV333   | 0.45” × 0.47” | 30                      |
+| 30 A   | WC1-30-MV333   | 0.72” x 0.62” | 30                      |
+| 60 A   | WC1-60-MV333   | 0.72” x 0.62” | 60                      |
+| 100 A  | WC1-100-MV333  | 0.72” x 0.62” | 100                     |
+| 200 A  | WC2-200-MV333  | 1.0” × 1.4”   | 200                     |
+| 300 A  | WC2-300-MV333  | 1.0” × 1.4”   | 300                     |
+| 200 A  | WC4-200-MV333  | 1.3” × 1.7”   | 200                     |
+| 300 A  | WC4-300-MV333  | 1.3” × 1.7”   | 300                     |
+| 400 A  | WC4-400-MV333  | 1.3” × 1.7”   | 400                     |
+| 1000 A | WC5-1000-MV333 | 2.0” × 3.5”   | 1000                    |
 
 This is an abridged list. Wattcore offers many more current and size options in both the WC splitcore and the WCS solid core ranges.
 
@@ -440,15 +441,16 @@ and the black wire to the sleeve. There should be no connection to the ring.
 
 #### Continental Control Systems - ACTL Series Split-Core Current Transformers
 
-Imax Catalog Part No. Aperture Calibration coefficient
-20 A ACTL-0750-020 0.78” × 0.78” 20
-50 A ACTL-0750-050 0.78” × 0.78” 50
-100 A ACTL-0750-100 0.78” × 0.78” 100
-150 A ACTL-0750-150 0.78” × 0.78” 150
-200 A ACTL-0750-200 0.78” × 0.78” 200
-250 A ACTL-1250-250 1.83” × 1.26” 250
-400 A ACTL-1250-400 1.83” × 1.26” 400
-600 A ACTL-1250-600 1.83” × 1.26” 600
+| Imax  | Catalog Part No. | Aperture      | Calibration Coefficient |
+|-------|------------------|---------------|-------------------------|
+| 20 A  | ACTL-0750-020    | 0.78” × 0.78” | 20                      |
+| 50 A  | ACTL-0750-050    | 0.78” × 0.78” | 50                      |
+| 100 A | ACTL-0750-100    | 0.78” × 0.78” | 100                     |
+| 150 A | ACTL-0750-150    | 0.78” × 0.78” | 150                     |
+| 200 A | ACTL-0750-200    | 0.78” × 0.78” | 200                     |
+| 250 A | ACTL-1250-250    | 1.83” × 1.26” | 250                     |
+| 400 A | ACTL-1250-400    | 1.83” × 1.26” | 400                     |
+| 600 A | ACTL-1250-600    | 1.83” × 1.26” | 600                     |
 
 Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified for use on a 50 Hz
 system. “Option C0.6” is the revenue-grade version.
@@ -459,25 +461,23 @@ and CTs that are rated up to 6 kA primary current.
 For consistency with the standard CTs supplied by the shop, connect the white wire to the plug tip
 and the black wire to the sleeve. There should be no connection to the ring.
 
-#### YHDC 50A/100A/200A/300A/400A Split-Core Current Transformer SCT023R Output Voltage
+#### YHDC 50A/100A/200A/300A/400A Split-Core Current Transformer SCT023R Voltage Output Type
 
 ![SCT023R_0.333V_Pic.png](files/EINA210423/SCT023R_0.333V_Pic.png)
 ![SCT023R_0.333V_Sch.png](files/EINA210423/SCT023R_0.333V_Sch.png)
 ![SCT023R_0.333V_Dims.png](files/EINA210423/SCT023R_0.333V_Dims.png)
 
-type
-Rated Current
-(IPN)
-Maximum Input
-(IPM) Rated Output Calibration Coefficient
-50 A 50 A 0.333V 50
-100 A 100 A 0.333V 100
-200 A 200 A 0.333V 200
-300 A 300 A 0.333V 300
-400 A 400 A 0.333V 400
-600 A 600 A 0.333V 600
+| Rated Current (IPN) | Maximum Input (IPM) | Rated Output | Calibration Coefficient |
+|---------------------|---------------------|--------------|-------------------------|
+| 50 A                | 50 A                | 0.333V       | 50                      |
+| 100 A               | 100 A               | 0.333V       | 100                     |
+| 200 A               | 200 A               | 0.333V       | 200                     |
+| 300 A               | 300 A               | 0.333V       | 300                     |
+| 400 A               | 400 A               | 0.333V       | 400                     |
+| 600 A               | 600 A               | 0.333V       | 600                     |
 
 For all variants:
+
 Accuracy: ± 1.0%
 Linearity: ± 1.0%
 Phase shift: Not specified
@@ -503,15 +503,19 @@ generation, but at a rate substantially less than the rate at which the customer
 
 ## Metering
 
-Metering is regulated by the local energy provider, city government, energy cooperative, etc.
+Metering is regulated by the local energy provider, city government, energy co-operative, etc.
 
-All modern meters used in the US, both mechanical and electronic, employ anti-theft mechanisms, i.e. their displays register an increase in energy consumption regardless of the direction the energy flows through the meter. It is possible an owner of a PV system could end up paying for the excess energy they produce. US Meter sockets are built in a manner that allows insertion of a meter in the socket in two ways, i.e. the meter can be inserted in the socket upside down. It wasn't uncommon, especially for rural customers, to break the meter seal, pull the meter out of its socket and re-insert the meter in the socket upside down. The meter—Ferarris type—would spin backwards, and decrement the reading. When the energy providers caught on to this, they installed ratchet mechanisms in the meters that prevented the reverse rotation, but they still lost revenue. Even though the meter did not turn backwards, it didn’t turn at all if it was in the socket upside down. With the advent of electronic meters, the solution was simple, build the meter so that it incremented the count regardless of the direction the energy flowed through the meter. Changing the construction of the meter such that it could be inserted in the socket only one way would have solved the issue, but that never happened.
+All modern meters used in the US, both mechanical and electronic, employ anti-theft mechanisms, i.e. their displays register an increase in energy consumption regardless of the direction the energy flows through the meter. It is possible an owner of a PV system could end up paying for the excess energy they produce.
 
-In some locales, If a customer has energy generating equipment, installation of a net meter will be required. This will depend entirely on the energy provider's rules regarding customer-generated energy. If it is not a requirement, it is likely the customer can request net metering. The net meter has three “registers” that tally kWh delivered to the customer, kWh delivered to the grid, and the nett difference between those two amounts. The display on a net meter typically “rotates” through the three readings, pausing on each for a few seconds, as compared to the regular meter’s static display.
+US Meter sockets are built in a manner that allows insertion of a meter in the socket in two ways, i.e. the meter can be inserted in the socket upside down. It wasn't uncommon - especially for rural customers - to break the meter seal, pull the meter out of its socket, and re-insert the meter in the socket upside-down position. Ferarris type meters would spin backwards and decrement the reading. When the energy providers caught on to this, they installed ratchet mechanisms in the meters that prevented the reverse rotation, but they still lost revenue. Even though the meter did not turn backwards, it didn’t turn at all if it was in the socket upside-down position. 
+
+With the advent of electronic meters, the solution was simple, build the meter so that it incremented the count regardless of the direction the energy flowed through the meter. Changing the construction of the meter such that it could be inserted in the socket only one way would have solved the issue, but that never happened.
+
+In some locales, If a customer has energy generating equipment, installation of a net meter will be required. This will depend entirely on the energy provider's rules regarding customer-generated energy. If it is not a requirement, it is likely the customer can request net metering. The net meter has three “registers” that tally kWh delivered to the customer, kWh delivered to the grid, and the net difference between those two amounts. The display on a net meter typically “rotates” through the three readings, pausing on each for a few seconds, as compared to the regular meter’s static display.
 
 Almost anyone who has a net meter should know it, since they had to ask their energy provider for it. If a person didn’t actually make the request for the net meter e.g. they buy a home with a PV system, and have no knowledge of PV, they might not know they have a net meter.
 
-## The need for an energy diverter?
+## The Need for an Energy Diverter?
 
 If a customer-owned energy generation system is producing excess energy, and net metering is not in place, an energy diverter will be needed to avoid the scenario described above.
 
