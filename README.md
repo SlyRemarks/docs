@@ -81,26 +81,30 @@ CT 1 sees the total current of the upper 120 V load and the 240 V load: I<sub
 CT 2 sees the total current of the lower 120 V load and the 240 V load: I<sub>2</sub> + I<sub>3</sub>
 Note that CT 1 faces to the right and CT 2 faces to the left, as indicated by the ‘phase dots’. If we assume the lower leg voltage is identical in magnitude to the upper, and we add the powers together in software, then the total power as measured will be
 
-V × I<sub>CT1</sub> + V × I<sub>CT2</sub>
-= V × (I<sub>1</sub> + I<sub>3</sub>) + V × (I<sub>2</sub> + I<sub>3</sub>)
-= V × I<sub>1</sub> + V × I<sub>2</sub> + 2 × V × I<sub>3</sub>
+<code>V × I<sub>CT1</sub> + V × I<sub>CT2</sub></code> <br>
+<code>= V × (I<sub>1</sub> + I<sub>3</sub>) + V × (I<sub>2</sub> + I<sub>3</sub>)</code> <br>
+<code>= V × I<sub>1</sub> + V × I<sub>2</sub> + 2 × V × I<sub>3</sub></code> <br>
 
 Other arrangements are possible:
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3b.webp)
 <p style="font-size: smaller">Figure 3a-b. North American Domestic Electricity Supply - Alternative arrangements for measuring whole-house power.</p>
 
-Fig 3a: I<sub>CT1</sub> = I<sub>1</sub> + I<sub>3</sub>
+Fig 3a: 
 
-I<sub>CT2</sub> = I<sub>2</sub> + I<sub>3</sub>
+<code>I<sub>CT1</sub> = I<sub>1</sub> + I<sub>3</sub></code> <br>
 
-Total Power = ½ × V × I<sub>CT1</sub> + ½ × V × I<sub>CT2</sub>
+<code>I<sub>CT2</sub> = I<sub>2</sub> + I<sub>3</sub></code> <br>
 
-Fig 3b: I<sub>CT1</sub> = I<sub>1</sub> + I<sub>3</sub>
+<code>Total Power = ½ × V × I<sub>CT1</sub> + ½ × V × I<sub>CT2</sub></code> <br>
 
-I<sub>CT2</sub> = I<sub>2</sub> - I<sub>1</sub>
+Fig 3b: 
 
-Total Power = 2 × V × I<sub>CT1</sub> + V × I<sub>CT2</sub>
+<code>I<sub>CT1</sub> = I<sub>1</sub> + I<sub>3</sub></code> <br>
+
+<code>I<sub>CT2</sub> = I<sub>2</sub> - I<sub>1</sub></code> <br>
+
+<code>Total Power = 2 × V × I<sub>CT1</sub> + V × I<sub>CT2</sub></code> <br>
 
 ### Measuring Individual Circuits
 
