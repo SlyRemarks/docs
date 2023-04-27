@@ -82,7 +82,9 @@ CT 2 sees the total current of the lower 120 V load and the 240 V load: I<sub>2
 Note that CT 1 faces to the right and CT 2 faces to the left, as indicated by the ‘phase dots’. If we assume the lower leg voltage is identical in magnitude to the upper, and we add the powers together in software, then the total power as measured will be
 
 <code>V × I<sub>CT1</sub> + V × I<sub>CT2</sub></code> <br>
+
 <code>= V × (I<sub>1</sub> + I<sub>3</sub>) + V × (I<sub>2</sub> + I<sub>3</sub>)</code> <br>
+
 <code>= V × I<sub>1</sub> + V × I<sub>2</sub> + 2 × V × I<sub>3</sub></code> <br>
 
 Other arrangements are possible:
@@ -215,37 +217,37 @@ The burden & calibration coefficient are calculated for Fig 5a arrangement only.
 
 Magnelab offers a 1, 2 & 5 Volt output option on both the UCT and the SCT ranges of split-core CTs, which are available through their distributor, [Aim Dynamics](https://www.aimdynamics.com).
 
-For consistency with the standard YHDC CT supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
+For consistency with the standard YHDC CT that was supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
 #### Wattcore Split-Core Series
 
-| Imax   | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration Coefficient |
-|--------|------------------|---------------|---------------|-------------------|-------------------------|
-| 100 A  | WC1-100          | -             | 0.72” × 0.62” | 1 V (custom)      | 100                     |
-| 400 A  | WC2-300          | -             | 1.0” × 1.4”   | 1 V (custom)      | 400                     |
-| 300 A  | WC3-300          | -             | 0.75” × 0.93” | 1 V (custom)      | 300                     |
-| 400 A  | WC4-400          | -             | 1.3” × 1.7”   | 1 V (custom)      | 400                     |
-| 1000 A | WC5-1000         | -             | 2.0” × 3.5”   | 1 V (custom)      | 1000                    |
-| 2000 A | WC6-2000         | -             | 2.0” × 5.5”   | 1 V (custom)      | 2000                    |
+| Imax   | Catalog Part No. | Aperture      | Burden (Internal) | Calibration Coefficient |
+|--------|------------------|---------------|-------------------|-------------------------|
+| 100 A  | WC1-100          | 0.72” × 0.62” | 1 V (custom)      | 100                     |
+| 400 A  | WC2-300          | 1.0” × 1.4”   | 1 V (custom)      | 400                     |
+| 300 A  | WC3-300          | 0.75” × 0.93” | 1 V (custom)      | 300                     |
+| 400 A  | WC4-400          | 1.3” × 1.7”   | 1 V (custom)      | 400                     |
+| 1000 A | WC5-1000         | 2.0” × 3.5”   | 1 V (custom)      | 1000                    |
+| 2000 A | WC6-2000         | 2.0” × 5.5”   | 1 V (custom)      | 2000                    |
 
-For consistency with the standard YHDC CT supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
+For consistency with the standard YHDC CT that was supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
 #### Continental Control Systems - ACT-0750 Series Split-Core Current Transformers
 
-| Imax  | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration Coefficient |
-|-------|------------------|---------------|---------------|-------------------|-------------------------|
-| 5 A   | ACT-0750-005     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 5                       |
-| 20 A  | ACT-0750-020     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 20                      |
-| 50 A  | ACT-0750-050     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 50                      |
-| 100 A | ACT-0750-100     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 100                     |
-| 200 A | ACT-0750-200     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 200                     |
-| 250 A | ACT-0750-250     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 250                     |
+| Imax  | Catalog Part No. | Aperture      | Burden (Internal) | Calibration Coefficient |
+|-------|------------------|---------------|-------------------|-------------------------|
+| 5 A   | ACT-0750-005     | 0.78” × 0.78” | 1 V (Option 1V)   | 5                       |
+| 20 A  | ACT-0750-020     | 0.78” × 0.78” | 1 V (Option 1V)   | 20                      |
+| 50 A  | ACT-0750-050     | 0.78” × 0.78” | 1 V (Option 1V)   | 50                      |
+| 100 A | ACT-0750-100     | 0.78” × 0.78” | 1 V (Option 1V)   | 100                     |
+| 200 A | ACT-0750-200     | 0.78” × 0.78” | 1 V (Option 1V)   | 200                     |
+| 250 A | ACT-0750-250     | 0.78” × 0.78” | 1 V (Option 1V)   | 250                     |
 
 Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified for use on a 50 Hz system. “Option 1V” & “Option NL” must be specified for use with the emonTx or emonPi.
 
 “Revenue Grade” versions (having better accuracy) are also available, see the [manufacturer's website](https://www.ccontrolsys.com/w/ACT_Series_Split-Core_Current_Transformers#Options) for details. CCS also makes CTs that are rated up to 6 kA primary current.
 
-For consistency with the standard YHDC CT supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
+For consistency with the standard YHDC CT that was supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
 #### YHDC 100A/200A/400A Split Core Current Transformer SCT023R
 
