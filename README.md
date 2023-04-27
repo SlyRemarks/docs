@@ -522,7 +522,7 @@ In some locales, If a customer has energy generating equipment, installation of 
 
 Almost anyone who has a net meter should know it, since they had to ask their energy provider for it. If a person didn’t actually make the request for the net meter e.g. they buy a home with a PV system, and have no knowledge of PV, they might not know they have a net meter.
 
-## The Need for an Energy Diverter?
+## Why the Need for an Energy Diverter?
 
 If a customer-owned energy generation system is producing excess energy, and net metering is not in place, an energy diverter will be needed to avoid the scenario described above.
 
