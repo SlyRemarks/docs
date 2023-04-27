@@ -28,7 +28,7 @@ normally daisy-chained and supplied by a 6 A circuit breaker.
 ## Supply Characteristics – North America
 
 Compared to the UK, the North American final distribution transformer tends to be quite small,
-typically 25 kVA, serving only a few homes. The normal domestic supply is 240 V, 60 Hz centretapped, and the centre tap is the neutral, which is also grounded.
+typically 25 kVA, serving only a few homes. The normal domestic supply is 240 V, 60 Hz centre tapped, and the centre tap is the neutral, which is also grounded.
 
 ![N.American Electricity Supply - final transformer voltages](files/EINA210423/N_America_Fig_1.webp)
 
