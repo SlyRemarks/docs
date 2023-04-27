@@ -191,7 +191,7 @@ The burden & calibration coefficient are calculated for Fig 5a arrangement only.
 
 #### Magnelab Solid-Core Series
 
-| Imax  | Catalog Part No. | Nominal Ratio | Aperture | Burden (E24 series, 0.25 W, 1%) | Calibration coefficient |
+| Imax  | Catalog Part No. | Nominal Ratio | Aperture | Burden (E24 series, 0.25 W, 1%) | Calibration Coefficient |
 |-------|------------------|---------------|----------|---------------------------------|-------------------------|
 | 30 A  | UCT-0300-000     | 1:880         | 0.3”     | 33 Ω                            | 26.667                  |
 | 60 A  | UCT-0500-000     | 1:360         | 0.5”     | 6.8 Ω                           | 52.94                   |
@@ -201,7 +201,7 @@ The burden & calibration coefficient are calculated for Fig 5a arrangement only.
 
 #### Magnelab Split-Core Series
 
-| Imax   | Catalog Part No. | Nominal Ratio | Aperture | Burden (E24 series, 0.25 W, 1%) | Calibration coefficient |
+| Imax   | Catalog Part No. | Nominal Ratio | Aperture | Burden (E24 series, 0.25 W, 1%) | Calibration Coefficient |
 |--------|------------------|---------------|----------|---------------------------------|-------------------------|
 | 75 A   | SCT-0400-000     | 1:3000        | 0.4”     | 43 Ω                            | 69.77                   |
 | 200 A  | SCT-0750-000     | 1:7500        | 0.75”    | 39 Ω                            | 192.31                  |
@@ -215,7 +215,7 @@ For consistency with the standard YHDC CT supplied by the shop, connect the whit
 
 #### Wattcore Split-Core Series
 
-| Imax   | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration coefficient |
+| Imax   | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration Coefficient |
 |--------|------------------|---------------|---------------|-------------------|-------------------------|
 | 100 A  | WC1-100          | -             | 0.72” × 0.62” | 1 V (custom)      | 100                     |
 | 400 A  | WC2-300          | -             | 1.0” × 1.4”   | 1 V (custom)      | 400                     |
@@ -228,7 +228,7 @@ For consistency with the standard YHDC CT supplied by the shop, connect the whit
 
 #### Continental Control Systems - ACT-0750 Series Split-Core Current Transformers
 
-| Imax  | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration coefficient |
+| Imax  | Catalog Part No. | Nominal Ratio | Aperture      | Burden (internal) | Calibration Coefficient |
 |-------|------------------|---------------|---------------|-------------------|-------------------------|
 | 5 A   | ACT-0750-005     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 5                       |
 | 20 A  | ACT-0750-020     | -             | 0.78” × 0.78” | 1 V (Option 1V)   | 20                      |
@@ -521,9 +521,11 @@ If a customer-owned energy generation system is producing excess energy, and net
 
 However, net metering is employed by most, if not all, US energy providers. Therefore, the need for a diverter might be temporary, or non-existent. It depends on the energy provider’s rules regarding customer-owned generating equipment and connecting said equipment to the grid, and the tariff structure. The larger cities tend to be much stricter than the smaller communities. In much of rural America, energy providers have no experience with, or knowledge of, PV systems.
 
-_(Bill Thomson writes: That was the scenario I encountered when I contacted my energy provider, the town public works department, to connect my PV system to the grid. They kept telling me “We don’t know anything about solar panels.” It took about 9 months, but I eventually did get a net meter installed. In the meantime, one of Robin’s Mk2 diverters served nicely to keep me from paying for the excess energy I was producing.)_
+Bill Thomson writes: 
 
-The OpenEnergyMonitor guide [Choosing an energy diverter](../../pv-diversion/introduction/choosing-an-energy-diverter.md) might provide some further useful information.
+> That was the scenario I encountered when I contacted my energy provider, the town public works department, to connect my PV system to the grid. They kept telling me "We don’t know anything about solar panels". It took about 9 months, but I eventually did get a net meter installed. In the meantime, one of Robin’s Mk2 diverters served nicely to keep me from paying for the excess energy I was producing.
+
+The OpenEnergyMonitor guide [Choosing an Energy Diverter](../../pv-diversion/introduction/choosing-an-energy-diverter.md) might provide some further useful information.
 
 ## Changes for MartinR’s PLL Energy Diverter
 
