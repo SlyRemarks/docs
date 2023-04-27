@@ -375,24 +375,25 @@ give 0.333 V at the emonTx4 current input.
 
 #### Magnelab Solid-Core Series
 
-Imax Catalog Part No. Aperture Calibration coefficient
-10 A UCT-0500-010 0.5” 10
-15 A UCT-0500-015 0.5” 15
-20 A UCT-0500-020 0.5” 20
-30 A UCT-0500-030 0.5” 30
-30 A UCT-0750-030 0.75” 30
-50 A UCT-0750-050 0.75” 50
-70 A UCT-0750-070 0.75” 70
-Imax Catalog Part No. Aperture Calibration coefficient
-100 A UCT-0750-100 0.75” 100
-150 A UCT-1000-150 1.00” 150
-200 A UCT-1000-200 1.00” 200
+| Imax  | Catalog Part No. | Aperture | Calibration coefficient |
+|-------|------------------|----------|-------------------------|
+| 10 A  | UCT-0500-010     | 0.5”     | 10                      |
+| 15 A  | UCT-0500-015     | 0.5”     | 15                      |
+| 20 A  | UCT-0500-020     | 0.5”     | 20                      |
+| 30 A  | UCT-0500-030     | 0.5”     | 30                      |
+| 30 A  | UCT-0750-030     | 0.75”    | 30                      |
+| 50 A  | UCT-0750-050     | 0.75”    | 50                      |
+| 70 A  | UCT-0750-070     | 0.75”    | 70                      |
+| 100 A | UCT-0750-100     | 0.75”    | 100                     |
+| 150 A | UCT-1000-150     | 1.00”    | 150                     |
+| 200 A | UCT-1000-200     | 1.00”    | 200                     |
 
 #### Magnelab Split-Core Series
 
-Imax Catalog Part No. Aperture Calibration coefficient
-1 A SCT-0400-001 0.4” 1
-5 A SCT-0400-005 0.4” 5
+| Imax  | Catalog Part No. | Aperture | Calibration coefficient |
+|-------|------------------|----------|-------------------------|
+| 1 A   | SCT-0400-001     | 0.4”     | 1                       |
+| 5 A   | SCT-0400-005     | 0.4”     | 5                       |
 10 A SCT-0400-010 0.4” 10
 15 A SCT-0400-015 0.4” 15
 20 A SCT-0400-020 0.4” 20
