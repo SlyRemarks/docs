@@ -6,21 +6,21 @@ brief outline of the UK power system and the differences from UK practice.
 ## Supply Characteristics – UK
 
 In the UK, the final distribution transformer tends to be large. In urban areas, it may be around
-1 MVA, and may serve a few hundred homes. It will be three-phase with star-connected
+1 MVA, and may serve a few hundred homes. It will be three-phase with star connected
 secondaries. The star point, which is the neutral, will be earthed (grounded). The secondary voltage
 is nominally 240 V line–neutral, giving 415 V between phases. The frequency is 50 Hz ± 1%.
-Although large commercial and industrial premises will have a 3-phase supply, many small
-industrial units might have only a single phase. Anything other than a single phase supply is very
+Although large commercial and industrial premises will have a three-phase supply, many small
+industrial units might only have a single-phase supply. Anything other than a single-phase supply is very
 rare for domestic consumers, although this might change as electric vehicles become even more
 common.
 
 The normal rating of the domestic supply will be 80 or 100 A. The supply authority will provide a
 fuse, a neutral link and a meter. From that point on, the wiring is the responsibility of the consumer.
-The cables between the meter and the “consumer unit” are called “meter tails” and will normally be
+The cables between the meter and the "consumer unit" are called "meter tails" and will normally be
 16 mm² or 25 mm² copper, with a maximum diameter over the sheath of about 10.5 mm. High
 current appliances, such as cookers or showers, will normally be fed by a dedicated circuit breaker,
-but the socket outlets for general use with portable appliances are almost always fed by a “ring final
-sub-circuit” – comprising essentially a loop of cable starting and ending at a 32 A circuit breaker,
+but the socket outlets for general use with portable appliances are almost always fed by a "ring final
+sub-circuit" – comprising essentially a loop of cable starting and ending at a 32 A circuit breaker,
 which feeds an unlimited number of socket outlets, subject to a maximum floor area served of
 100 m². Each appliance plug is fitted with a fuse rated at between 1 A & 13 A. Lighting points are
 normally daisy-chained and supplied by a 6 A circuit breaker.
@@ -32,10 +32,10 @@ typically 25 kVA, serving only a few homes. The normal domestic supply is 240 V,
 
 ![N.American electricity supply - final transformer voltages](files/EINA210423/N_America_Fig_1.webp)
 
-*Figure 1. North American domestic electricity supply - final transformer voltages.*
+<sub>Figure 1. North American domestic electricity supply - final transformer voltages.</sub>
 
 The voltage tolerance is ±5% and the imbalance between the two legs has been reported to be better
-than 2 V, although there is no actual specification regarding voltage imbalance. Load centre (circuit
+than 2 V, although there is no actual specification regarding voltage imbalance. A load centre (circuit
 breaker panel) layout enables an electrician to distribute the loads between the two legs when the
 wiring is installed. Standard practice among US electricians is to connect the circuits to the breakers
 in numerical sequence, with odd numbered breakers connected to one leg and even numbered 
@@ -70,16 +70,18 @@ leg.
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_2.webp)
 
-*Figure 2. North American domestic electricity supply - measuring whole-house power. Note the
-different c.t. orientation for the emonTx V2 & V3 compared to the emonTx V2 & V3 emonTx4.*
+<sub>Figure 2. North American domestic electricity supply - measuring whole-house power. Note the
+different c.t. orientation for the emonTx V2 & V3 compared to the emonTx V2 & V3 emonTx4.</sub>
 
 In Fig 2, assume for simplicity the loads are all purely resistive. (If they are not, which will almost
 certainly be the case in practice, the same principle applies but the maths is a little more
 complicated.)
 
-CT 1 sees the total current of the upper 120 V load and the 240 V load: I<sub>1</sub> + I<sub>3</sub>
-CT 2 sees the total current of the lower 120 V load and the 240 V load: I<sub>2</sub> + I<sub>3</sub>
-Note that CT 1 faces to the right and CT 2 faces to the left, as indicated by the ‘phase dots’. If we assume the lower leg voltage is identical in magnitude to the upper, and we add the powers together in software, then the total power as measured will be
+<code>CT 1 sees the total current of the upper 120 V load and the 240 V load: I<sub>1</sub> + I<sub>3</sub></code> <br>
+
+<code>CT 2 sees the total current of the lower 120 V load and the 240 V load: I<sub>2</sub> + I<sub>3</sub></code>
+
+Note that CT 1 faces to the right and CT 2 faces to the left, as indicated by the ‘phase dots’. If we assume the lower leg voltage is identical in magnitude to the upper, and we add the powers together in software, then the total power as measured will be:
 
 <code>V × I<sub>CT1</sub> + V × I<sub>CT2</sub></code> <br>
 
@@ -91,7 +93,7 @@ Other arrangements are possible:
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_3b.webp)
 
-*Figure 3a-b. North American domestic electricity supply - alternative arrangements for measuring whole-house power.*
+<sub>Figure 3a-b. North American domestic electricity supply - alternative arrangements for measuring whole-house power.</sub>
 
 Fig 3a: 
 
@@ -116,8 +118,8 @@ Individual circuits may be either 120 V using a connection between one leg and n
 ![N.American Electricity Supply - Measuring individual circuits](files/EINA210423/N_America_Fig_4a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_4b.webp)
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_4c.webp)
 
-*Figure 4a-c. North American domestic electricity supply - alternative arrangements for measuring
-individual circuits.*
+<sub>Figure 4a-c. North American domestic electricity supply - alternative arrangements for measuring
+individual circuits.</sub>
 
 Fig 4a: Power = V × I = EnergyMonitor::realPower
 
@@ -132,13 +134,13 @@ If the circuit is purely 240 V, i.e. there is no neutral connection, again only 
 However, the power must be doubled, as the voltage measured is only half the voltage applied to the
 load, as in Fig 4c.
 
-If the circuit is “mixed” 120 V and 240 V, i.e. the main load is 240 V but there is a neutral
+If the circuit is "mixed" 120 V and 240 V, i.e. the main load is 240 V but there is a neutral
 connection to supply for example a timer, an indicator lamp or similar low power device, then it
-might be acceptable to ignore the 120 V load and treat the load as a “pure” 240 V load and the
+might be acceptable to ignore the 120 V load and treat the load as a "pure" 240 V load and the
 arrangement of Fig 4c can be used. There will however, be a small error.
 
 If the 120 V load cannot be ignored, i.e. the error is unacceptable, the load should be treated as a
-“whole house” with one of the arrangements of Fig 3 shown in the section above.
+"whole house" with one of the arrangements of Fig 3 shown in the section above.
 
 ### Connecting the Current Transformers
 
@@ -150,44 +152,44 @@ used, releasing the second for another circuit.
 ![N.American Electricity Supply - Measuring whole-house power, CT arrangement](files/EINA210423/N_America_Fig_5a.webp) ![N.American Electricity Supply - Measuring whole-house power, CT arrangement](files/EINA210423/N_America_Fig_5b.webp)
 ![N.American Electricity Supply - Measuring whole-house power, CT arrangement](files/EINA210423/N_America_Fig_5c.webp)
 
-*Figure 5a-c. North American domestic electricity supply - connecting the current transformers.*
+<sub>Figure 5a-c. North American domestic electricity supply - connecting the current transformers.</sub>
 
 Fig 5a – One input per CT – voltage type with internal burden or current type with burden in the
 emonTx.
 
 Fig 5b – CTs in parallel with a common burden in the emonTx – using a single input.
 
-Fig 5c – ‘Voltage output’ CTs or CTs with individual burdens – using a single input.
+Fig 5c – 'Voltage output' CT's or CT's with individual burdens – using a single input.
 
 In Fig 5a, the burden and calibration coefficient are calculated in the standard way. The burden
-value is calculated to give approx 1.1 V rms for the emonTx, or 1.6 V for the emonTx Shield, at
+value is calculated to give approx 1.1 V<sub>rms</sub> for the emonTx, or 1.6 V<sub>rms</sub> for the emonTx Shield, at
 maximum measured current. The calibration coefficient is then calculated:
 
 <code>current coefficient = (CT ratio) / (Burden resistance)</code>
 
-or for a ‘voltage output’ CT with an internal burden:
+or for a 'voltage output' CT with an internal burden:
 
 <code>current coefficient = (CT rated primary current) / (CT rated output voltage)</code>
 
-This arrangement is suitable for ‘voltage output’ CTs having an output voltage of 1.0 V at rated
+This arrangement is suitable for 'voltage output' CT's having an output voltage of 1.0 V at rated
 current.
 
 In Fig 5b, the CT currents are summed in a single burden resistor; the burden value is calculated to
-give half the maximum input voltage for the maximum current either leg. The CTs should have the
-same current ratio, the calibration coefficient must be calculated knowing the burden voltage at a
+give half the maximum input voltage for the maximum current on either leg. The CT's should have the
+same current ratio; the calibration coefficient must be calculated knowing the burden voltage at a
 specified total current:
 
 <code>current coefficient = (total CT primary currents) / (burden voltage)</code>
 
-A ‘voltage output’ CT is not suitable for this connection arrangement.
+A 'voltage output' CT is not suitable for this connection arrangement.
 
 In Fig 5c, the burden voltages are summed; each burden value is calculated to give half of the
-maximum input voltage for the maximum current. If the CTs are not identical, the burden resistors
+maximum input voltage for the maximum current. If the CT's are not identical, the burden resistors
 must be chosen so that they develop the same voltage for the same primary current.
 
 <code>current coefficient = (total CT primary currents) / (total burden voltage)</code>
 
-This arrangement is suitable for ‘voltage output’ CTs, but the output voltage at rated current should
+This arrangement is suitable for 'voltage output' CT's, but the output voltage at rated current should
 be approximately 0.55 V (0.75 V for the emonTx Shield).
 
 ### Suitable Current Transformers
@@ -244,9 +246,9 @@ For consistency with the standard YHDC CT that was supplied by the shop, connect
 | 200 A | ACT-0750-200     | 0.78” × 0.78” | 1 V (Option 1V)   | 200                     |
 | 250 A | ACT-0750-250     | 0.78” × 0.78” | 1 V (Option 1V)   | 250                     |
 
-Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified for use on a 50 Hz system. “Option 1V” & “Option NL” must be specified for use with the emonTx or emonPi.
+Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified for use on a 50 Hz system. "Option 1V" & "Option NL" must be specified for use with the emonTx or emonPi.
 
-“Revenue Grade” versions (having better accuracy) are also available, see the [manufacturer's website](https://ctlsys.com/current-transformers/) for details. CCS also makes CTs that are rated up to 6 kA primary current.
+"Revenue Grade" versions (having better accuracy) are also available, see the [manufacturer's website](https://ctlsys.com/current-transformers/) for details. CCS also makes CT's that are rated up to 6 kA primary current.
 
 For consistency with the standard YHDC CT that was supplied by the shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no connection to the ring.
 
@@ -301,37 +303,37 @@ Where both are numbers greater than 1. For the emonTx V3.4, the voltage divider
 Because there are three wires (discounting the protective ground conductor), classical theory
 dictates that two wattmeters are needed, and for ‘wattmeter’ read a pair of voltage and current
 measurements. The emonTx4 has three voltage inputs, only L1 and L2 should be used. You will
-need two current measurements, one on each ‘hot’ leg of the supply. You do not need a c.t. on the
+need two current measurements, one on each 'hot' leg of the supply. You do not need a CT on the
 neutral, it will only tell you the current imbalance between the two legs.
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_6-CTs.webp)
 
-*Figure 6. North American domestic electricity supply - measuring whole-house power. Note the
-different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.*
+<sub>Figure 6. North American domestic electricity supply - measuring whole-house power. Note the
+different CT orientation for the emonTx4 compared to the emonTx V2 & V3.</sub>
 
 In Fig 6, assume for simplicity the loads are all purely resistive. (If they are not, which will almost
 certainly be the case in practice, the same principle applies but the maths is a little more
 complicated.)
 
-CT 1 sees the total current of the upper 120 V load and the 240 V load: I<sub>1</sub> + I<sub>3</sub>
+<code>CT 1 sees the total current of the upper 120 V load and the 240 V load: I<sub>1</sub> + I<sub>3</sub></code>
 
-CT 2 sees the total current of the lower 120 V load and the 240 V load: I<sub>2</sub> + I<sub>3</sub>
+<code>CT 2 sees the total current of the lower 120 V load and the 240 V load: I<sub>2</sub> + I<sub>3</sub></code>
 
 Note that both CT 1 and CT 2 face to the left, as indicated by the ‘phase dots’ – this is because both
 V1 and V2 voltages are measured with reference to the neutral.
 
-The power for loads only on the “A” leg is straightforward:
+The power for loads only on the "A" leg is straightforward:
 
 <code>P = V<sub>1</sub> × I<sub>1</sub></code>
 
-and for the “B” leg (a mirror image):
+and for the "B" leg (a mirror image):
 
 <code>P = V<sub>2</sub> × I<sub>2</sub></code>
 
 but for 240 V loads, the two voltages are measured in opposite directions and the currents too flow
-in opposite directions through the CTs. The simplest way to think of this is to divide the 240 V load
+in opposite directions through the CT's. The simplest way to think of this is to divide the 240 V load
 into two – the mid-point can then (conceptually) be connected to the neutral (but no current will
-flow because it’s at the same voltage) and the two halves then become indistinguishable from two
+flow because it is at the same voltage) and the two halves then become indistinguishable from two
 identical 120 V loads, each taking the same current as the 240 V load did.
 
 The total power is
@@ -350,32 +352,32 @@ may be 240 V, i.e. connected to both legs.
 
 ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7a.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7b.webp) ![N.American Electricity Supply - Measuring whole-house power](files/EINA210423/N_America_Fig_7c.webp)
 
-*Figure 7a-c. North American domestic electricity supply - arrangements for measuring individual
-circuits. Note the different c.t. orientation for the emonTx4 compared to the emonTx V2 & V3.*
+<sub>Figure 7a-c. North American domestic electricity supply - arrangements for measuring individual
+circuits. Note the different CT orientation for the emonTx4 compared to the emonTx V2 & V3.</sub>
 
 In each case, the power calculation is set up by the API call <code>EmonLibDB_set_pInput(…)</code>.
 
-For the Fig 7a & b arrangements, use the “single voltage” form and for Fig 7c use the “2 voltages”
+For the Fig 7a & b arrangements, use the "single voltage" form and for Fig 7c use the "2 voltages"
 form, which takes care of adding the voltages together.
 
-If the circuit is “mixed” 120 V and 240 V, i.e. the main load is 240 V but there is a neutral
+If the circuit is "mixed" 120 V and 240 V, i.e. the main load is 240 V but there is a neutral
 connection to supply for example a timer, an indicator lamp or similar low power device, then it
-might be acceptable to ignore the 120 V load and treat the load as a “pure” 240 V load and the
+might be acceptable to ignore the 120 V load and treat the load as a "pure" 240 V load and the
 arrangement of Fig 4c can be used. There will however, be a small error.
 
 If the 120 V load cannot be ignored, i.e. the error is unacceptable, the load should be treated as a
-“whole house” following the arrangement of Fig 6 above with 2 c.t’s, but the c.t’s must be on the
+“whole house” following the arrangement of Fig 6 above with 2 CT’s, but the CT’s must be on the
 conductors supplying the load before the 120 V circuit splits off.
 
 ### Suitable Current Transformers
 
 Current transformers with a voltage output of 0.333 V rms at the rated current should be used with
-the emonTx4. The calibration coefficient is always the rated current of the c.t.
+the emonTx4. The calibration coefficient is always the rated current of the CT.
 
-It is not necessary to short-circuit a voltage-output c.t. while it is not connected to the emonTx
+It is not necessary to short-circuit a voltage-output CT while it is not connected to the emonTx
 (because its burden is internal).
 
-If it is absolutely necessary to use a current-output c.t, then you must provide a burden of resistance
+If it is absolutely necessary to use a current-output CT, then you must provide a burden of resistance
 value to give a voltage as close as possible to but less than 0.333 V rms at the rated primary
 current of the c.t, with a power rating to suit. The calibration coefficient is the current that would
 give 0.333 V at the emonTx4 current input.
@@ -418,7 +420,7 @@ give 0.333 V at the emonTx4 current input.
 | 800 A | SCT-3000-800     | 3” × 5”  | 800                     |
 
 This is an abridged list. Magnelab offers many more current and size options in both the UCT solid
-core and the SCT split-core ranges CTs, which are available through their distributor, Aim
+core and the SCT split-core ranges CT's, which are available through their distributor, Aim
 Dynamics.
 
 For consistency with the standard CTs supplied by the shop, connect the white wire to the plug tip
@@ -443,7 +445,7 @@ and the black wire to the sleeve. There should be no connection to the ring.
 
 This is an abridged list. Wattcore offers many more current and size options in both the WC split-core and the WCS solid-core ranges.
 
-For consistency with the standard CTs supplied by the shop, connect the white wire to the plug tip
+For consistency with the standard CT's supplied by the shop, connect the white wire to the plug tip
 and the black wire to the sleeve. There should be no connection to the ring.
 
 #### Continental Control Systems - ACTL Series Split-Core Current Transformers
@@ -459,8 +461,8 @@ and the black wire to the sleeve. There should be no connection to the ring.
 | 400 A | ACTL-1250-400    | 1.83” × 1.26” | 400                     |
 | 600 A | ACTL-1250-600    | 1.83” × 1.26” | 600                     |
 
-Note that these are calibrated at 60 Hz, “Option 50 Hz” must be specified for use on a 50 Hz
-system. “Option C0.6” is the revenue-grade version.
+Note that these are calibrated at 60 Hz, "Option 50 Hz" must be specified for use on a 50 Hz
+system. "Option C0.6" is the revenue-grade version.
 
 This is an abridged list, see the [manufacturer’s website](https://www.ccontrolsys.com/w/ACT_Series_Split-Core_Current_Transformers#Options) for details. CCS also makes solid-core CTs
 and CTs that are rated up to 6 kA primary current.
@@ -485,11 +487,11 @@ and the black wire to the sleeve. There should be no connection to the ring.
 
 For all variants:
 
-Accuracy: ± 1.0%
-Linearity: ± 1.0%
-Phase shift: Not specified
+    Accuracy: ± 1.0%
+    Linearity: ± 1.0%
+    Phase shift: Not specified
 
-A 3.5 mm ‘stereo’ jack plug is required. For consistency with the standard CTs supplied by the
+A 3.5 mm ‘stereo’ jack plug is required. For consistency with the standard CT's supplied by the
 shop, connect the white wire to the plug tip and the black wire to the sleeve. There should be no
 connection to the ring.
 
@@ -506,7 +508,7 @@ If you have any doubt as to the correct current transformer to specify, [please 
 
 In general, there is no legal requirement for the local energy provider to purchase customer
 generated power. However, most energy providers will pay the customer for excess energy
-generation, but at a rate substantially less than the rate at which the customer pays for energy
+generation, but at a rate substantially less than the rate at which the customer pays for energy.
 
 ## Metering
 
@@ -514,11 +516,11 @@ Metering is regulated by the local energy provider, city government, energy co-o
 
 All modern meters used in the US, both mechanical and electronic, employ anti-theft mechanisms, i.e. their displays register an increase in energy consumption regardless of the direction the energy flows through the meter. It is possible an owner of a PV system could end up paying for the excess energy they produce.
 
-US Meter sockets are built in a manner that allows insertion of a meter in the socket in two ways, i.e. the meter can be inserted in the socket upside down. It wasn't uncommon - especially for rural customers - to break the meter seal, pull the meter out of its socket, and re-insert the meter in the socket upside-down position. Ferarris type meters would spin backwards and decrement the reading. When the energy providers caught on to this, they installed ratchet mechanisms in the meters that prevented the reverse rotation, but they still lost revenue. Even though the meter did not turn backwards, it didn’t turn at all if it was in the socket upside-down position. 
+US Meter sockets are built in a manner that allows insertion of a meter in the socket in two ways, i.e. the meter can be inserted in the socket upside down. It wasn't uncommon - especially for rural customers - to break the meter seal, pull the meter out of its socket, and re-insert the meter upside-down in the socket. Ferarris type meters would spin backwards and decrement the reading. When the energy providers caught on to this, they installed ratchet mechanisms in the meters that prevented the reverse rotation, but they still lost revenue. Even though the meter did not turn backwards, it didn’t turn at all if it was in the socket upside-down. 
 
 With the advent of electronic meters, the solution was simple, build the meter so that it incremented the count regardless of the direction the energy flowed through the meter. Changing the construction of the meter such that it could be inserted in the socket only one way would have solved the issue, but that never happened.
 
-In some locales, If a customer has energy generating equipment, installation of a net meter will be required. This will depend entirely on the energy provider's rules regarding customer-generated energy. If it is not a requirement, it is likely the customer can request net metering. The net meter has three “registers” that tally kWh delivered to the customer, kWh delivered to the grid, and the net difference between those two amounts. The display on a net meter typically “rotates” through the three readings, pausing on each for a few seconds, as compared to the regular meter’s static display.
+In some locales, If a customer has energy generating equipment, installation of a net meter will be required. This will depend entirely on the energy provider's rules regarding customer-generated energy. If it is not a requirement, it is likely the customer can request net metering. The net meter has three "registers" that tally kWh delivered to the customer, kWh delivered to the grid, and the net difference between those two amounts. The display on a net meter typically "rotates" through the three readings, pausing on each for a few seconds, as compared to the regular meter’s static display.
 
 Almost anyone who has a net meter should know it, since they had to ask their energy provider for it. If a person didn’t actually make the request for the net meter e.g. they buy a home with a PV system, and have no knowledge of PV, they might not know they have a net meter.
 
@@ -536,7 +538,7 @@ The OpenEnergyMonitor guide [Choosing an Energy Diverter](../../pv-diversion/int
 
 ## Changes for MartinR’s PLL Energy Diverter
 
-Martin Roberts’ PLL design for the emonTx V2 has been adapted for 3 CTs and 60 Hz operation by Dan Woodie. Details are posted at [https://openenergymonitor.org/emon/node/2624](https://openenergymonitor.org/emon/node/2624) and [https://openenergymonitor.org/emon/node/2679](https://openenergymonitor.org/emon/node/2679)
+Martin Roberts’ PLL design for the emonTx V2 has been adapted for 3 CT's and 60 Hz operation by Dan Woodie. Details are posted at [https://openenergymonitor.org/emon/node/2624](https://openenergymonitor.org/emon/node/2624) and [https://openenergymonitor.org/emon/node/2679](https://openenergymonitor.org/emon/node/2679)
 
 Note: For the emonTx V3.4 the following changes are required:
 
@@ -556,14 +558,14 @@ Note: For the emonTx V3.4 the following changes are required:
 #define TRIACPIN 3   // triac driver pin
 ```
 
-Spare digital outputs for SYNCPIN & SAMPPIN are not available. DIO7 is available on a pad and _might_ be usable for either, with care. These outputs are intended for development & testing only, and are not required in normal operation.
+Spare digital outputs for SYNCPIN & SAMPPIN are not available. DIO7 is available on a pad and *might* be usable for either, with care. These outputs are intended for development & testing only, and are not required in normal operation.
 
 No information is available regarding changes required for the emonTx4.
 
 ## Changes for Robin Emley’s Energy Diverter
 
 (See [Diverting surplus PV Power, by Robin Emley](/pv-diversion/mk2/index.html)) The only change necessary for the emonTx V2
-or emonTx V3.x is to alter CYCLES_PER_SECOND to 60. No information is available regarding
+or emonTx V3.x is to alter <code>CYCLES_PER_SECOND</code> to 60. No information is available regarding
 changes required for the emonTx4.
 
 ## Glossary / Translation
@@ -577,8 +579,7 @@ changes required for the emonTx4.
 | The general (low voltage) electricity supply                              | Mains                                                             | Line                                                              |
 | The operating frequency of the supply                                     | Mains frequency                                                   | Line frequency                                                    |
 | A current-carrying conductor                                              | Live (both Line and Neutral are considered ‘Live’ when energised) | Live (both Line and Neutral are considered ‘Live’ when energised) |
-| Customer premises switch that disconnects equipment from the Mains        | Isolator                                                          | Disconnect                                                        |
-|                                                                           |                                                                   |                                                                   |
+| Customer premises switch that disconnects equipment from the Mains        | Isolator                                                          | Disconnect     
 | Distribution panel incorporating a main switch and MCBs or fuses          | Consumer Unit                                                     | Load Center                                                       |
 | Current Transformer that can be opened to allow a cable to be inserted    | Split Core Current Transformer                                    | Split Core CT                                                     |
 | Current Transformer that cannot be opened to allow a cable to be inserted | Ring Core Current Transformer                                     | Solid Core CT                                                     |
